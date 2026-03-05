@@ -9,6 +9,78 @@ O Alto Conselho Jedi exige da equipe de **War Analytics** insights capazes de es
 
 ---
 
+## 📋 Visão Geral do Projeto
+
+Este projeto realiza uma análise de dados para identificação de clones defeituosos utilizando técnicas de Machine Learning (Árvore de Decisão). O dataset contém **1.048.719 registros** de clones com informações sobre seus atributos físicos e o General Jedi responsável por seu treinamento.
+
+### Tecnologias Utilizadas
+- **Python** 3.12.10
+- **Pandas** - Manipulação e análise de dados
+- **NumPy** - Operações numéricas
+- **Scikit-learn** - Algoritmo de Árvore de Decisão
+- **Matplotlib** - Visualização de gráficos
+- **Seaborn** - Visualizações estatísticas avançadas
+- **Scipy** - Cálculos estatísticos
+- **Pillow** - Processamento de imagens
+- **PyArrow** - Trabalho com dados em formato arrow
+- **Jinja2** - Renderização de templates
+
+---
+
+## 🚀 Como Instalar e Usar
+
+### Pré-requisitos
+- Python 3.12.10 instalado no seu sistema
+- pip (gerenciador de pacotes do Python)
+
+### Passo 1: Clonar o Repositório
+```bash
+git clone https://github.com/vrenzd/analise_clones.git
+cd analise_clones
+```
+
+### Passo 2: Criar um Ambiente Virtual (Recomendado)
+```bash
+# No Windows
+python -m venv venv
+venv\Scripts\activate
+
+# No macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Passo 3: Instalar as Dependências
+```bash
+pip install -r analise_clones/requirements.txt
+```
+
+### Passo 4: Executar a Análise
+```bash
+# Dentro do diretório do projeto
+python main.py
+```
+
+Ou, se o script principal estiver em outro local:
+```bash
+python analise_clones/seu_script.py
+```
+
+---
+
+## 📊 Estrutura do Projeto
+
+```
+analise_clones/
+├── requirements.txt          # Dependências do projeto
+├── main.py                   # Script principal de execução
+├── dados/                    # Dataset com os clones
+├── modelos/                  # Modelos de ML treinados
+└── graficos/                 # Visualizações geradas
+```
+
+---
+
 ## 1. Visão Geral dos Dados e Exploração
 
 O relatório baseia-se em um vasto dataset militar contendo **1.048.719 registros** e 9 variáveis principais. Entre as variáveis analisadas constam atributos físicos dos clones como 'Massa', 'Estatura', 'Tamanho do crânio' e os 'Generais Jedi encarregados'. 
@@ -83,4 +155,3 @@ As principais saídas do modelo demonstram claramente onde reside a fraqueza no 
 | 🟢 **Média** | Replicar e estudar práticas táticas e educacionais implementadas nos esquadrões de **Aayla Secura, Mace Windu e Obi-Wan Kenobi**. |
 
 > **"Que a Força esteja com nossos dados."** - *Equipe War Analytics*
-
