@@ -58,12 +58,7 @@ pip install -r analise_clones/requirements.txt
 ### Passo 4: Executar a Análise
 ```bash
 # Dentro do diretório do projeto
-python main.py
-```
-
-Ou, se o script principal estiver em outro local:
-```bash
-python analise_clones/seu_script.py
+python analise_arvore_decisao_clones.ipynb
 ```
 
 ---
@@ -72,11 +67,12 @@ python analise_clones/seu_script.py
 
 ```
 analise_clones/
-├── requirements.txt          # Dependências do projeto
-├── main.py                   # Script principal de execução
-├── dados/                    # Dataset com os clones
-├── modelos/                  # Modelos de ML treinados
-└── graficos/                 # Visualizações geradas
+├── requirements.txt                       # Dependências do projeto
+├── analise_arvore_decisao_clones.ipynb    # Script principal de execução
+├── dados/                                 # Dados Usados
+    ├── dados_clones.parquet               # Dataset com os clones
+    ├── clones.pdf                         # Tabela dos clones
+    └── analise bivariada.pdf              # Análise bivariada
 ```
 
 ---
